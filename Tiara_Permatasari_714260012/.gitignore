@@ -1,0 +1,15 @@
+# Byte-compiled 7 optimized / DLL files
+__pycache__
+*.py[cod]
+*Spy.class
+
+# Lingkungan Virtual & IDE
+.vscode/
+.idea/
+*.swp
+
+# Berkas Environment / Rahasia
+.enw
+.venv/
+env/
+venv/

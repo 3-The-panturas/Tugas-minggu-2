@@ -1,3 +1,8 @@
+# =========================================
+# MODUL: operasi3.py
+# Modul fungsi mandiri (def) dengan nilai kembalian (return) 
+# =========================================
+
 def tambah(a, b):
     """Mengembalikan hasil penjumlahan a + b"""
     return a + b
@@ -11,16 +16,32 @@ def kali(a, b):
     return a * b
 
 def bagi(a, b):
-    """Mengembalikan hasil pembagian a / b."""
+    """    Mengembalikan hasil pembagian a / b.    Menangani pencegahan error saat pembagi bernilai 0.
+    Mengembalikan hasil pembagian a / b.
+    Menangani pencegahan error saat pembagi bernilai nol.
+    """
     if b == 0:
-        return "Error: pembagian dengan nol"
+        return "Error: Pembagi tidak bole bernilai nol!"
     return a / b
 
+def cek_ganjil_genap(angka):
+    """   Memeriksa sifat bilangan ganjil atau genap    menggunakan operator modulus (%)
+    Memeriksa sifat bilangan ganjil atau genap
+    Menggunakan operator modulus (%)
+    """
+    if angka % 2 == 0:
+        return "Genap"
+    else:
+        return "Ganjil"
+
 def hitung_deret_aritmatika(awal, beda, n):
-    """Menghitung total akumulasi deret aritmatika"""
+    """   Menghitung total akumulasi deret menggunakan perulangan for     
+    Menghitung total akumulasi deret mengggunakan perulangan for 
+    """
     total = 0
     suku = awal
     for i in range(n):
         total += suku
         suku += beda
-    return total
+    return total 
+    
